@@ -1,17 +1,14 @@
 package jm.task.core.jdbc.util;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.sql.Statement;
-
-import com.mysql.cj.jdbc.Driver;
 
 public class Util {
-    // реализуйте настройку соеденения с БД
-   private static String URL = "jdbc:mysql://localhost:3306/testdb";
-    private static String USER = "root";
-    private static String PASSWORD = "root";
-    private static String DB_DRIVER = "com.mysql.cj.jdbc.Driver";
+    private static final String URL = "jdbc:mysql://localhost:3306/dbtest";
+    private static final String USER = "root";
+    private static final String PASSWORD = "root";
+    private static final String DB_DRIVER = "com.mysql.cj.jdbc.Driver";
 
     public static Connection getConnection() {
         Connection connection = null;
